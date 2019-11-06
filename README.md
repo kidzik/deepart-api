@@ -24,7 +24,6 @@ python submit.py`
 ```
 It should return the ID of a new image
 ```
-{"token":"90cb24442fecc2309635cff5c4b6d1a880f31086"}
 {"id":4520139}
 Images submitted succesfully
 ```
@@ -36,11 +35,9 @@ python getresult.py 4520139
 ```
 At first you will get `processing status` like this
 ```
-{"token":"90cb24442fecc2309635cff5c4b6d1a880f31086"}
 {"status":"processing","result":""}
 ```
 but at some point it will turn to `done` and will return a url of the result
 ```
-{"token":"90cb24442fecc2309635cff5c4b6d1a880f31086"}
 {"status":"done","result":"https://deepart-io.s3.amazonaws.com/results/d7ca10ed2b14b1a1-4520139.png"}
 ```
