@@ -20,7 +20,7 @@ DEEPART_STYLE="style.jpg"
 
 To upload content and style run the `submit scritpt`
 ```bash
-python submit.py` 
+python submit.py
 ```
 It should return the ID of a new image
 ```bash
