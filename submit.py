@@ -18,7 +18,6 @@ def main():
     headers={'Authorization': "Token %s" % token}
 
     response = requests.post(host + '/api/myorders/create/', {}, headers = headers)
-    print(response.text)
     resp = json.loads(response.text)
     
     pk = resp['id']
@@ -27,7 +26,6 @@ def main():
 
     response = requests.post(host + '/api/myorders/%d/image/' % (pk,), {'whichimg': 'style', 'parent_id': '1'}, files={'image': open(DEEPART_STYLE, 'rb')}, headers = headers)
 
-    print("Images submitted succesfully"
-
+    print("Images submitted succesfully")
         
 main()

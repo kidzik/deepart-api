@@ -17,7 +17,6 @@ def main():
     data = {"username": DEEPART_LOGIN, "password": DEEPART_PASSWORD}
     response = requests.post(host + url, data = data)
 
-    print(response.text)
     resp = json.loads(response.text)
     token = resp["token"]
     headers={'Authorization': "Token %s" % token}
